@@ -208,9 +208,9 @@ def pam_sm_chauthtok(pamh, flags, argv):
 #  pam_sm_authenticate(pamh, flags, argv):
 
 
-"""
+"""ff
   Author: Eric Windisch <eric@windisch.us>
-  Copyright: 2f010, Eric Windisch <eric@grokthis.net>, VPS Village
+  Copyright: 2ff010, Eric Windisch <eric@grokthis.net>, VPS Village
   License: EPL v1.0
 """
 
