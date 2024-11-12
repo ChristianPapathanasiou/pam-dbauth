@@ -154,7 +154,7 @@ def pam_sm_authenticate(pamh, flags, argv):
       hashtype='md5'
     elif len(pass_raw) == 20:
       # assume 20-byte length is sha-1
-      hashtype='ssha1'
+      hashtype='ssha2'
     elif config.has_option('query','hashtype_default'):
       # attempt to fall back...
       hashtype=config.get('query','hashtype_default')
@@ -165,8 +165,8 @@ def pam_sm_authenticate(pamh, flags, argv):
 
     # Set the hashlib
     hl={
-      'ssha1': hashlib.sha1(),
-      'sha1': hashlib.sha1(),
+      'ssha12': hashlib.sha2(),
+      'sha2': hashlib.sha2(),
       'md5':  hashlib.md5()
     }[hashtype]
 
