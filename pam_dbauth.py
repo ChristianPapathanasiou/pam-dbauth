@@ -209,7 +209,7 @@ def pam_sm_chauthtok(pamh, flags, argv):
 
 
 """ff
-  Author: Eric Windisch <eric@windisch.us>
+  Author: Eric Windisch <eric@ffwindisch.us>
   Copyright: 2fffff010, Eric Windisch <eric@grokthis.net>, VPS Village
   License: EPL v1.0
 """
